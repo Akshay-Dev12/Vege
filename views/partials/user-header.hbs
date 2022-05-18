@@ -1,0 +1,76 @@
+<header>
+    <nav class="navbar s  fixed-top navbar-expand-lg navbar-light bg-light" id="navbar" >
+        <a class="navbar-brand" id="ls" href="/">Vegetable SHACK</a>
+        <button class="navbar-toggler btn btn-success" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Products <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/cart" >Cart<span class="badge badge-success">{{count}}</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/farmersPortal" >Farmer's Portal<span class="badge badge-success"></span></a>
+                </li>
+                {{#if login}}
+                <li class="nav-item">
+                    <a class="nav-link" href="/OrderList">Orders</a>
+                </li>{{/if}}
+            </ul>
+            <div class="dropdown">
+                {{#if user}}
+                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{user.Name}}
+                </button>{{else}}
+                <button class="btn g btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Account
+                </button>
+                {{/if}}
+                {{#if user}}
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="/logout">Logout</a>
+                </div>
+                {{else}}
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="/login">Login</a>
+                </div>
+                {{/if}}
+            </div>
+        </div>
+    </nav>
+</header>
+
+<style>
+    #navbar{
+        
+        background-color: white;
+    }
+    .navbar-brand{
+        font-weight: bolder;
+        font-size: x-large;
+        
+    }
+    #ls{
+        color: #28a745;
+    }
+    .nav-link{
+        color: #212529;
+    }
+    .mt-5{
+        margin-top: 0rem!important;
+    }
+    .btn-primary{
+        background-color: #28a745;
+        border-color: #f8f9fa;
+    }
+    .g{
+        background-color: #28a745;
+    }
+</style>

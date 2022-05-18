@@ -1,0 +1,19 @@
+<section>
+    <div class="container">
+        <form action="/admin/edit-pdt/{{database._id}}" enctype="multipart/form-data" method="POST">
+            
+
+            <label for="">Name</label>
+            <input type="text" class="form-control" value="{{database.Name}}" name="Name" placeholder="Name of the pdts">
+            
+            <label for="">Price</label>
+            <input type="number" min="0" step="1" class="form-control" value="{{database.Price}}" name="Price" placeholder="Price Of The Product">
+            <label for="">Discription</label>
+            <input type="text" class="form-control" value="{{database.Dis}}" name="Dis" placeholder="Description">
+            <label>Image</label>
+            <input name="Image" type="file" class="form-control">
+            <button type="submit" class="btn btn-success">Submit</button>
+            
+        </form>
+    </div>
+</section>

@@ -1,0 +1,344 @@
+
+
+<form style="padding-left:35px ;" class="sty" id="checkout">
+  <h2 class="ch">Check Out</h2>
+  <div class="form-row">
+    <div  onclick="name()"  class="form-group col-md-6">
+      <label  for="inputEmail4">Name</label>
+      <input  type="text" name="Name"  value="{{userName}}" class="form-control" id="name" placeholder="Your Name">
+    </div>
+  </div>
+  <div onclick="address()"  class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text"  name="Address" value="{{userAddress}}" class="form-control" id="address" placeholder="1234 Main St">
+  </div>
+  <div onclick="phone()"  class="form-group">
+    <label for="inputAddress2">Phone Number</label>
+    <input type="number"  name="Phone" value="{{userPhone}}" class="form-control" id="phone" placeholder="Phone Number">
+    <input type="text" name="userId" id="" value="{{user}}" hidden>
+  </div>
+   <div class="row ml-3">
+    <h3 class="t1">Total Price : {{total}} Rs</h3>
+  </div>
+  <div style="padding-top:30px ;" class="row">
+      <legend style="font-weight:bold ;" class="col-form-label col-sm-2 pt-0">Payment Method</legend>
+      <div class="col-sm-10">
+        <div onclick="cod()" onkeydown="cod()" class="form-check">
+          <input class="form-check-input"  type="radio" name="payment" id="cod" value="cod">
+          <label class="form-check-label" for="gridRadios1">
+            COD
+          </label>
+        </div>
+        <div onclick="online()" onkeydown="online()" class="form-check">
+          <input class="form-check-input"  type="radio" name="payment" id="online" value="online">
+          <label class="form-check-label" for="gridRadios2">
+            Online Payment
+          </label>
+        </div>
+       
+      </div>
+    </div>
+    <div class="row">
+      <button type="submit" class="btn btn-primary">Check Out</button>
+    </div>
+</form>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="sty">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Vegetable Shack
+          </h6>
+          <p>
+            Website for buying fruits and vegetabes and more user friendly for differently abled peoples .
+            The new way of shopping at your finger tips.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Vegetables</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Fruits</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">RazorPay </a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Secured Payment</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Products</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Kozhikode, NY 10012, India</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            vegetableshack@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> 8593913425</p>
+          <p><i class="fas fa-print me-3"></i> 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="#">vegetableshack.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<script>
+  $("#checkout").submit((e) => {
+    e.preventDefault()
+    $.ajax({
+      url: '/order',
+      method: 'post',
+      data: $('#checkout').serialize(),
+      success: (response) => {
+        alert(response)
+        if(response.codSuccess){
+          location.href='/orderSuccess'
+        }else{
+          razorpay(response)
+          console.log("Razorpay is coming");
+        }
+      }
+    })
+  })
+  function razorpay(order){
+    var options = {
+    "key": 'rzp_live_ihaIjZE7kgrM03', // Enter the Key ID generated from the Dashboard
+    "amount": order.amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+    "currency": "INR",
+    "name": "Vegetable Shack",
+    "description": "Test Transaction",
+    "image": "https://example.com/your_logo",
+    "order_id": order.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+    "handler": function (response){
+        //alert(response.razorpay_payment_id);
+        //alert(response.razorpay_order_id);
+        //alert(response.razorpay_signature);
+        verifyPayment(response,order)
+    },
+    "prefill": {
+        "name": "Gaurav Kumar",
+        "email": "gaurav.kumar@example.com",
+        "contact": "9999999999"
+    },
+    "notes": {
+        "address": "Razorpay Corporate Office"
+    },
+    "theme": {
+        "color": "#3399cc"
+    }
+};
+var rzp1 = new Razorpay(options);
+rzp1.open();
+  }
+  function verifyPayment(payment,order){
+    $.ajax({
+      url:'/verifyPayment',
+      data:{
+        payment,
+        order
+      },
+      method:'post',
+      success:(response)=>{
+        if(response.status){
+          location.href='/orderSuccess'
+
+        }else{
+          alert("Payment is Failed")
+        }
+      }
+    })
+  }
+</script>
+
+<style>
+  .sty {
+    padding-top: 75px;
+  }
+  .ch{
+    font-size:x-large;
+    font-weight:bolder;
+    text-align: center;
+    
+    
+  }
+  .t1{
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+</style>
+
+<script>
+     function name() {
+        let msg = document.getElementById("name").value;
+        console.log("You entered is ", +msg)
+        let speech = new SpeechSynthesisUtterance();
+        speech.lang = "en-US";
+
+        speech.text = msg;
+        speech.volume = 1;
+        speech.rate = 1;
+        speech.pitch = 1;
+        window.speechSynthesis.speak(speech);
+
+
+    
+    }
+      function address() {
+        let msg = document.getElementById("address").value;
+        console.log("You entered is ", +msg)
+        let speech = new SpeechSynthesisUtterance();
+        speech.lang = "en-US";
+
+        speech.text = msg;
+        speech.volume = 1;
+        speech.rate = 1;
+        speech.pitch = 1;
+        window.speechSynthesis.speak(speech);
+
+
+    
+    }
+      function phone() {
+        let msg = document.getElementById("phone").value;
+        console.log("You entered is ", +msg)
+        let speech = new SpeechSynthesisUtterance();
+        speech.lang = "en-US";
+
+        speech.text = msg;
+        speech.volume = 1;
+        speech.rate = 1;
+        speech.pitch = 1;
+        window.speechSynthesis.speak(speech);
+
+
+    
+    }
+       function cod() {
+        let msg = document.getElementById("cod").value;
+        console.log("You entered is ", +msg)
+        let speech = new SpeechSynthesisUtterance();
+        speech.lang = "en-US";
+
+        speech.text = msg;
+        speech.volume = 1;
+        speech.rate = 1;
+        speech.pitch = 1;
+        window.speechSynthesis.speak(speech);
+
+
+    
+    }
+       function online() {
+        let msg = document.getElementById("online").value;
+        console.log("You entered is ", +msg)
+        let speech = new SpeechSynthesisUtterance();
+        speech.lang = "en-US";
+
+        speech.text = msg;
+        speech.volume = 1;
+        speech.rate = 1;
+        speech.pitch = 1;
+        window.speechSynthesis.speak(speech);
+
+
+    
+    }
+    
+
+
+</script>

@@ -1,0 +1,227 @@
+<section class="sty h-100" style="background-color: #eee;" >
+  <div class="container h-100 py-5">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-10">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h3 class="fw-normal mb-0 text-black">Shopping Cart</h3>
+        </div>
+    <table style="background-color: ;white" class="table mt-5 form-outline flex-fill">
+      <thead>
+        <tr>
+          <th  scope="col">Name</th>
+          <th scope="col">Discription</th>
+          <th scope="col">Price</th>
+          <th scope="col">Image</th>
+          <th scope="col">Quandity</th>
+        </tr>
+
+      </thead>
+      <tbody >
+        {{#each products}}
+        <tr >
+          {{#each this.products}}
+          
+          <td class="tb">{{this.Name}}</td>
+          <td >{{this.Dis}}</td>
+          <td class="tb">{{this.Price}} Rs</td>
+
+          <td>
+            <img style="width: 50px;height:50px;" src="./pdtImages/{{this._id}}.jpeg" alt="">
+          </td>
+          {{/each}}
+          <td>
+            <a href="/increment/{{this.item}}"> <button class="cart-item-count mr-3">+
+              </button>
+            </a>
+            {{this.quandity}}<a href="/decrement/{{this.item}}"><button class="cart-item-count ml-3">-</button></a>
+          </td>
+          <td>
+            <a href="/remove/{{this.item}}">
+              <button type="button" onclick="return confirm('Are you sure to delete')"
+                class="btn btn-danger">Remove</button>
+            </a>
+          </td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    <hr>
+      <div class="card mb-4">
+          <div class="card-body p-4 d-flex flex-row">
+            <div class="form-outline flex-fill">
+              <input type="text" id="form1" value="{{total}} Rupees Only" class="form-control form-control-lg" />
+              <label class="form-label" for="form1">Total Price</label>
+            </div>
+            <button type="button" onclick="location.href='/'" class="btn btn-outline-warning btn-lg ms-3">More Shopping</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <button type="button" onclick="location.href='/order'"  class="btn btn-warning btn-block btn-lg">Proceed to Pay</button>
+          </div>
+        </div>
+    
+      </div>
+      </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Vegetable Shack
+          </h6>
+          <p>
+            Website for buying fruits and vegetabes and more user friendly for differently abled peoples .
+            The new way of shopping at your finger tips.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Vegetables</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Fruits</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">RazorPay </a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Secured Payment</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Products</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Kozhikode, NY 10012, India</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            vegetableshack@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> 8593913425</p>
+          <p><i class="fas fa-print me-3"></i> 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold" href="#">vegetableshack.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+<script>
+  function totalPrice() {
+        let msg = document.getElementById("price").value;
+        console.log("You entered is ", +msg)
+        let speech = new SpeechSynthesisUtterance();
+        speech.lang = "en-US";
+
+        speech.text = msg;
+        speech.volume = 1;
+        speech.rate = 1;
+        speech.pitch = 1;
+        window.speechSynthesis.speak(speech);
+
+
+    }
+    function proceed(){
+      location.href='/order';
+    }
+</script>
+
+<style>
+  .sty {
+    padding-top: 75px;
+  }
+  .tb{
+    font-size: large;
+    font-style:oblique;
+    font-weight: bold;
+  }
+</style>

@@ -1,0 +1,35 @@
+<table class="table sty">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Address</th>
+            <th scope="col">Mobile</th>
+            <th scope="col">Payment</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each order}}
+        <tr>
+            <th scope="row">{{this.delivery.date}}</th>
+            <td>{{this.delivery.address}}</td>
+            <td>{{this.delivery.phone}}</td>
+            <td>{{this.paymentMethod}}</td>
+            <td>{{this.total}}</td>
+            <td>{{this.status}}</td>
+             <td >
+                 <a href="/viewOrderPdt/{{this._id}}" class="btn btn-primary" >View Products</a>
+             </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+<style>
+  #sty {
+    background-color: #eee;
+    padding-top: 75px;
+    
+  }
+</style>
